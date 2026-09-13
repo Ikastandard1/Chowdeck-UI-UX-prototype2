@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Explore Food — Chowdeck Prototype</title><link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"></head><body><header class="header"><a class="brand" href="index.html"><img src="assets/chowdeck-logo.svg"></a><nav><a href="index.html">Home</a><a class="active" href="explore.html">Explore</a><a href="orders.html">Orders</a><a href="profile.html">Profile</a></nav><div class="header-tools"><button id="mobileMenu" class="round-btn menu" aria-label="Open navigation menu">☰</button><button id="themeToggle" class="round-btn">◐</button><a class="cart-link" href="cart.html">Cart <b id="cartCount">0</b></a></div></header><main class="page-main"><div class="page-title"><span class="eyebrow">DISCOVER YOUR NEXT FAVORITE</span><h1>Explore food</h1><p>Real meals from places worth trying.</p></div><div class="filter-row"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="burgers">Burgers</button><button class="filter" data-filter="pizza">Pizza</button><button class="filter" data-filter="rice">Rice</button><button class="filter" data-filter="chicken">Chicken</button><button class="filter" data-filter="drinks">Drinks</button><button class="filter" data-filter="dessert">Dessert</button></div><div class="food-grid large-grid" id="exploreGrid"></div></main><script src="data.js"></script><script src="app.js"></script>
+<div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <strong>Menu</strong>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
+  </div>
+  <a href="index.html">⌂ <span>Home</span></a>
+  <a href="explore.html">⌕ <span>Discover food</span></a>
+  <a href="orders.html">▣ <span>Orders</span></a>
+  <a href="profile.html">♙ <span>Profile</span></a>
+  <a href="cart.html">🛒 <span>Cart</span><b id="drawerCartCount">0</b></a>
+</aside>
+
+</body></html>

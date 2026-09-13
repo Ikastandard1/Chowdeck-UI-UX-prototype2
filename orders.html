@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Orders — Chowdeck Prototype</title><link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"></head><body><header class="header"><a class="brand" href="index.html"><img src="assets/chowdeck-logo.svg"></a><nav><a href="index.html">Home</a><a href="explore.html">Explore</a><a class="active" href="orders.html">Orders</a><a href="profile.html">Profile</a></nav></header><main class="page-main"><div class="page-title"><span class="eyebrow">YOUR FOOD JOURNEY</span><h1>Orders</h1><p>Track your recent and current orders.</p></div><div class="order-card"><div class="order-icon">🍛</div><div><span class="status">● Preparing</span><h3>Jollof Rice Special</h3><p>Order #CD-2048 · Estimated arrival 25–35 min</p></div><a href="explore.html" class="text-link">Order again ↗</a></div><div class="empty-note">Your future orders will appear here.</div></main>
+<div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <strong>Menu</strong>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
+  </div>
+  <a href="index.html">⌂ <span>Home</span></a>
+  <a href="explore.html">⌕ <span>Discover food</span></a>
+  <a href="orders.html">▣ <span>Orders</span></a>
+  <a href="profile.html">♙ <span>Profile</span></a>
+  <a href="cart.html">🛒 <span>Cart</span><b id="drawerCartCount">0</b></a>
+</aside>
+
+</body></html>

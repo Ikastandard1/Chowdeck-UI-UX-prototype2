@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chowdeck — UI/UX Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="prototype-badge">UI/UX PROTOTYPE</div>
+<div id="splash" class="splash">
+  <div class="splash-glow"></div>
+  <div class="splash-inner">
+    <img class="brand-logo large-logo" src="assets/chowdeck-logo.svg" alt="Chowdeck logo">
+    <p>Good food, delivered.</p><div class="loading-line"><span></span></div>
+  </div>
+</div>
+
+<header class="header">
+  <a class="brand" href="index.html"><img src="assets/chowdeck-logo.svg" alt="Chowdeck"></a>
+  <nav><a class="active" href="index.html">Home</a><a href="explore.html">Explore</a><a href="orders.html">Orders</a><a href="profile.html">Profile</a></nav>
+  <div class="header-tools"><button id="themeToggle" class="round-btn">◐</button><a class="cart-link" href="cart.html">Cart <b id="cartCount">0</b></a><button id="mobileMenu" class="round-btn menu">☰</button></div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="hero-text">
+  <span class="eyebrow">DELIVERY, REIMAGINED</span>
+  <h1>Your cravings.<br><em>Our mission.</em></h1>
+  <p>Order delicious meals from restaurants around you, delivered fresh and fast.</p>
+  <div class="hero-buttons"><a class="primary" href="explore.html">Explore food <span>↗</span></a><button class="watch" id="watchVideo">▶ <span>Watch video</span></button></div>
+  <div class="stats"><div><strong>15k+</strong><small>Food lovers</small></div><div><strong>30 min</strong><small>Average delivery</small></div><div><strong>4.9</strong><small>App rating</small></div></div>
+ </div>
+ <div class="hero-media">
+  <div class="video-shell"><video id="heroVideo" autoplay muted loop playsinline><source src="assets/hero-video.mp4" type="video/mp4"></video><div class="video-overlay"></div><span class="fresh-tag">● Freshly prepared</span><div class="float-card order-float"><span>✓</span><div><b>Order confirmed</b><small>Your meal is being prepared</small></div></div><div class="float-card rating-float"><b>4.9</b><span>★★★★★</span><small>Loved by foodies</small></div></div>
+ </div>
+</section>
+
+<section class="section categories-section">
+ <div class="heading"><div><span class="eyebrow">FIND YOUR FAVORITE</span><h2>What are you craving?</h2></div><a href="explore.html" class="text-link">See all ↗</a></div>
+ <div class="categories"><a href="explore.html?category=all" class="category active"><span>✦</span><b>All</b></a><a href="explore.html?category=burgers" class="category"><span>🍔</span><b>Burgers</b></a><a href="explore.html?category=pizza" class="category"><span>🍕</span><b>Pizza</b></a><a href="explore.html?category=rice" class="category"><span>🍛</span><b>Rice</b></a><a href="explore.html?category=chicken" class="category"><span>🍗</span><b>Chicken</b></a><a href="explore.html?category=drinks" class="category"><span>🥤</span><b>Drinks</b></a><a href="explore.html?category=dessert" class="category"><span>🍰</span><b>Dessert</b></a></div>
+</section>
+
+<section class="section featured"><div class="heading"><div><span class="eyebrow">CURATED FOR YOU</span><h2>Popular right now</h2></div><a href="explore.html" class="text-link">View menu ↗</a></div><div class="food-grid" id="featuredGrid"></div></section>
+
+<section class="feature-banner section"><div class="banner-copy"><span class="eyebrow">MADE FOR YOUR MOMENTS</span><h2>Every meal has<br><em>a story.</em></h2><p>From quick lunch breaks to late-night cravings, find something worth sharing.</p><a href="explore.html" class="primary">Start exploring <span>↗</span></a></div><div class="banner-art"><div class="circle-art">🍜</div><i>✦</i><b>✧</b></div></section>
+
+<section class="section reviews"><div class="heading"><div><span class="eyebrow">THE CHOWDECK COMMUNITY</span><h2>Loved by foodies</h2></div></div><div class="review-grid"><article><span class="stars">★★★★★</span><p>“The experience is simple, smooth, and the food arrives looking as good as it did in the app.”</p><div class="person"><b>AM</b><span><strong>Amaka M.</strong><small>Lagos, Nigeria</small></span></div></article><article><span class="stars">★★★★★</span><p>“I discovered new restaurants in minutes. Everything feels clear and easy to use.”</p><div class="person"><b>KO</b><span><strong>Kola O.</strong><small>Yaba, Lagos</small></span></div></article><article><span class="stars">★★★★★</span><p>“Fast updates, beautiful food choices, and a very smooth ordering flow.”</p><div class="person"><b>ZA</b><span><strong>Zainab A.</strong><small>Surulere, Lagos</small></span></div></article></div></section>
+</main>
+<footer><div class="footer-main"><img src="assets/chowdeck-logo.svg" alt="Chowdeck"><p>Good food, delivered.</p><div class="socials"><span>ig</span><span>tk</span><span>x</span></div></div><small>Concept interface created as a UI/UX prototype.</small></footer>
+
+<div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <strong>Menu</strong>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
+  </div>
+  <a href="index.html">⌂ <span>Home</span></a>
+  <a href="explore.html">⌕ <span>Discover food</span></a>
+  <a href="orders.html">▣ <span>Orders</span></a>
+  <a href="profile.html">♙ <span>Profile</span></a>
+  <a href="cart.html">🛒 <span>Cart</span><b id="drawerCartCount">0</b></a>
+</aside>
+
+<div id="toast" class="toast"></div>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
